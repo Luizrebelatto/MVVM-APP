@@ -20,6 +20,11 @@
 - Listagem de publicações
 - Animação de curtir a postagem
 
+### ▶️  Executar
+```
+ git clone  https://github.com/Luizrebelatto/MVVM-APP.git
+```
+
 ### 📱 App Screenshots
 
  |                                            |                                           |                                        |      
