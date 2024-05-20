@@ -2,6 +2,10 @@
 
 
 ### 🏛️ O que é MVVM(Model-View-ViewModel)?
+É uma arquitetura que separa a interface do usuário e a lógica de negócios, o significado das 3 camadas são:
+- model -> Camada responsável pelos dados, como por exemplo as classes ou struct
+- view -> Responsavél pela interação do usuário, sempre que precisar de dados pedirá para a viewModel. Um exemplo para representar a view seria a UIView.
+- viewModel -> É a camada interemediaria entre a view e model, sendo responsavel pela parte logica da camada view e que possui acesso as informacoes na camada model. Um exemplo para representar seria o componente UIViewController
 
 
 ### 🛠 Conceitos Aprendidos
