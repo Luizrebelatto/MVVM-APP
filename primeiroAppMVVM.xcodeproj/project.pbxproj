@@ -10,6 +10,8 @@
 		29330D8F2C04EFA800368388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29330D8E2C04EFA800368388 /* GoogleService-Info.plist */; };
 		29330D922C04F32400368388 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 29330D912C04F32400368388 /* FirebaseAuth */; };
 		29330D942C04F32400368388 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 29330D932C04F32400368388 /* FirebaseCrashlytics */; };
+		29330D992C0548C100368388 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330D982C0548C100368388 /* LoginScreen.swift */; };
+		29330D9D2C0549FE00368388 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330D9C2C0549FE00368388 /* LoginVC.swift */; };
 		294A92CF2BEAD55F00140C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92CE2BEAD55F00140C41 /* AppDelegate.swift */; };
 		294A92D12BEAD55F00140C41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92D02BEAD55F00140C41 /* SceneDelegate.swift */; };
 		294A92D32BEAD55F00140C41 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92D22BEAD55F00140C41 /* HomeVC.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		29330D8E2C04EFA800368388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29330D982C0548C100368388 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		29330D9C2C0549FE00368388 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		294A92CB2BEAD55F00140C41 /* primeiroAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primeiroAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294A92CE2BEAD55F00140C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294A92D02BEAD55F00140C41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29330D952C05488000368388 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				29330D972C0548A500368388 /* Screen */,
+				29330D962C05489B00368388 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		29330D962C05489B00368388 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				29330D982C0548C100368388 /* LoginScreen.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		29330D972C0548A500368388 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				29330D9C2C0549FE00368388 /* LoginVC.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		294A92C22BEAD55F00140C41 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +121,7 @@
 		294A92CD2BEAD55F00140C41 /* primeiroAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				29330D952C05488000368388 /* Login */,
 				294A92F62BEDB03B00140C41 /* Model */,
 				294A92E52BEC183200140C41 /* Extension */,
 				294A92E22BEAF59C00140C41 /* HomeVC */,
@@ -350,6 +380,7 @@
 				294A92EB2BEC204000140C41 /* HomeViewModel.swift in Sources */,
 				294A92FD2BEEDB3400140C41 /* StoryCollectionViewCell.swift in Sources */,
 				294A92F52BEDAC8900140C41 /* StoryCardViewModel.swift in Sources */,
+				29330D992C0548C100368388 /* LoginScreen.swift in Sources */,
 				294A93102BF2492800140C41 /* PostCollectionViewCell.swift in Sources */,
 				294A930D2BF2439200140C41 /* PostCardViewModel.swift in Sources */,
 				294A93082BF1911B00140C41 /* PostCardCollectionViewCellScreen.swift in Sources */,
@@ -360,6 +391,7 @@
 				294A92D12BEAD55F00140C41 /* SceneDelegate.swift in Sources */,
 				294A92F22BED2A9900140C41 /* StoryCardCollectionViewCellScreen.swift in Sources */,
 				294A930A2BF2401500140C41 /* Posts.swift in Sources */,
+				29330D9D2C0549FE00368388 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
