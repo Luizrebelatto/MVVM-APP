@@ -45,6 +45,7 @@ extension LoginVC: loginViewModelProtocol {
     
     func errorLogin(errorMessage: String) {
         print(#function)
+        Alert(controller: self).showAlertInformation(title: "Ops, erro Login", message: errorMessage)
     }
 }
 
