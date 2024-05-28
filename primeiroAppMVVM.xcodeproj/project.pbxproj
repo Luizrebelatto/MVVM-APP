@@ -92,7 +92,7 @@
 		29330D962C05489B00368388 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				29330D982C0548C100368388 /* LoginScreen.swift */,
+				29330D9C2C0549FE00368388 /* LoginVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 		29330D972C0548A500368388 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				29330D9C2C0549FE00368388 /* LoginVC.swift */,
+				29330D982C0548C100368388 /* LoginScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
