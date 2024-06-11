@@ -17,6 +17,10 @@ class LoginVC: UIViewController {
         view = loginScreen
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginScreen?.delegate(delegate: self)
@@ -24,13 +28,17 @@ class LoginVC: UIViewController {
         viewModel.delegate(delegate: self)
     }
 
-
 }
 
 extension LoginVC: LoginScreenProtocol {
+    func tappedRegisterButon() {
+        print(#function)
+        let vc = RegisterVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func tappedLoginButton() {
         print("chegou na VC")
-//        viewModel.createUser(email: loginScreen?.emailTextField.text ?? ""  , password: loginScreen?.passwordTextField.text ?? "")
         viewModel.login(email: loginScreen?.emailTextField.text ?? ""  , password: loginScreen?.passwordTextField.text ?? "")
     }
  

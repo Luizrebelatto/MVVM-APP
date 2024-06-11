@@ -14,6 +14,9 @@
 		29330D9D2C0549FE00368388 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330D9C2C0549FE00368388 /* LoginVC.swift */; };
 		29330DA02C05657100368388 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330D9F2C05657100368388 /* LoginViewModel.swift */; };
 		29330DA32C061AA100368388 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330DA22C061AA100368388 /* Alert.swift */; };
+		29330DA92C0624C200368388 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330DA82C0624C200368388 /* RegisterViewModel.swift */; };
+		29330DAB2C06250000368388 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330DAA2C06250000368388 /* RegisterScreen.swift */; };
+		29330DAD2C06253100368388 /* RegisterVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29330DAC2C06253100368388 /* RegisterVCViewController.swift */; };
 		294A92CF2BEAD55F00140C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92CE2BEAD55F00140C41 /* AppDelegate.swift */; };
 		294A92D12BEAD55F00140C41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92D02BEAD55F00140C41 /* SceneDelegate.swift */; };
 		294A92D32BEAD55F00140C41 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A92D22BEAD55F00140C41 /* HomeVC.swift */; };
@@ -43,6 +46,9 @@
 		29330D9C2C0549FE00368388 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		29330D9F2C05657100368388 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		29330DA22C061AA100368388 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		29330DA82C0624C200368388 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		29330DAA2C06250000368388 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		29330DAC2C06253100368388 /* RegisterVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVCViewController.swift; sourceTree = "<group>"; };
 		294A92CB2BEAD55F00140C41 /* primeiroAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primeiroAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294A92CE2BEAD55F00140C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294A92D02BEAD55F00140C41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +129,40 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		29330DA42C0623A100368388 /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				29330DA72C06241300368388 /* VC */,
+				29330DA62C0623FC00368388 /* Screen */,
+				29330DA52C0623F100368388 /* ViewModel */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		29330DA52C0623F100368388 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29330DA82C0624C200368388 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		29330DA62C0623FC00368388 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				29330DAA2C06250000368388 /* RegisterScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		29330DA72C06241300368388 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				29330DAC2C06253100368388 /* RegisterVCViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		294A92C22BEAD55F00140C41 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +182,7 @@
 		294A92CD2BEAD55F00140C41 /* primeiroAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				29330DA42C0623A100368388 /* RegisterVC */,
 				29330DA12C061A8A00368388 /* Alert */,
 				29330D952C05488000368388 /* LoginVC */,
 				294A92F62BEDB03B00140C41 /* Model */,
@@ -398,6 +439,7 @@
 				29330DA02C05657100368388 /* LoginViewModel.swift in Sources */,
 				29330DA32C061AA100368388 /* Alert.swift in Sources */,
 				294A93002BEEDBDB00140C41 /* StoryCollectionViewCellScreen.swift in Sources */,
+				29330DAB2C06250000368388 /* RegisterScreen.swift in Sources */,
 				294A93052BF190CC00140C41 /* PostCardCollectionViewCell.swift in Sources */,
 				294A92D32BEAD55F00140C41 /* HomeVC.swift in Sources */,
 				294A92EF2BEC6A9300140C41 /* StoryCardCollectionViewCell.swift in Sources */,
@@ -410,8 +452,10 @@
 				294A93082BF1911B00140C41 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				294A92F82BEDB05000140C41 /* Stories.swift in Sources */,
 				294A92CF2BEAD55F00140C41 /* AppDelegate.swift in Sources */,
+				29330DAD2C06253100368388 /* RegisterVCViewController.swift in Sources */,
 				294A92E92BEC1A0C00140C41 /* UIColor + Extension.swift in Sources */,
 				294A92E72BEC185B00140C41 /* UIView + Extension.swift in Sources */,
+				29330DA92C0624C200368388 /* RegisterViewModel.swift in Sources */,
 				294A92D12BEAD55F00140C41 /* SceneDelegate.swift in Sources */,
 				294A92F22BED2A9900140C41 /* StoryCardCollectionViewCellScreen.swift in Sources */,
 				294A930A2BF2401500140C41 /* Posts.swift in Sources */,
